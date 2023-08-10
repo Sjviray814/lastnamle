@@ -1,7 +1,7 @@
 import json
 import random
 
-with open('data/database_surnames_no_duplicates.json', 'r') as f:
+with open('/home/sjviray814/10 Weeks of ML/lastnamle/data/data.json', 'r') as f:
     data = json.load(f)
 
 print(f'Total: {len(data["surname"])}')

@@ -4,3 +4,19 @@
 4. surname
 5. incidence
 6. frequency_denom
+
+
+
+Continents:
+
+1. North America
+2. South America
+3. Europe
+4. Asia
+5. Oceania
+6. Africa
+
+
+Subregions:
+
+1. Central America

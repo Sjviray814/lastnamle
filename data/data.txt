@@ -6,7 +6,6 @@
 6. frequency_denom
 
 
-
 Continents:
 
 1. North America
@@ -19,4 +18,76 @@ Continents:
 
 Subregions:
 
-1. Central America
+1. Central America, Northern America, Carribean 
+(based on https://www.teacherspayteachers.com/Product/North-America-A-World-Region-PowerPoint-1530616)
+
+2. Caribbean North, Brazil, Andean West, Southern Cone
+(based on https://slideplayer.com/slide/4271918/ slide 3) 
+
+3. Western Europe, Central and Eastern Europe, Southern Europe, Nothern Europe
+(based on https://en.wikipedia.org/wiki/File:Europe_subregion_map_UN_geoscheme.svg)
+
+4. West Asia, Central Asia, East Asia, Southeast Asia, South Asia 
+(based on https://en.wikipedia.org/wiki/File:Location-Asia-UNsubregions.png)
+
+5. Northern Africa, Eastern Africa, Middle Africa, Southern Africa, Western Africa 
+(based on https://en.wikipedia.org/wiki/File:Africa_map_regions.svg)
+
+6. Australasia, Melanesia, Micronesia, Polynesia 
+(based on https://www.britannica.com/place/Oceania-region-Pacific-Ocean)
+
+
+Countries in each subregion:
+
+1.  Central America: Belize, Costa Rica, El Salvador,Guatemala, 
+    Honduras, Nicaragua, Panama, Mexico
+    
+    Northern America: Canada, United States, Greenland, Bermuda, Saint Pierre and Miquelon
+    
+    Carribean: Anguilla, Antigua and Barbuda, Aruba, Bahamas, Barbados, British Virgin Islands, Cayman Islands, Cuba, Dominica, Dominican Republic, Grenada, Haiti, Jamaica, Saint Martin, Montserrat, Puerto Rico, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Trinidad and Tobago, United States Virgin Islands, Saint Barthelemy, Turks and Caicos Islands
+
+2.  Caribbean North: Colombia, Venezuela, Guyana, Suriname
+    
+    Brazil: Brazil
+
+    Andean West: Peru, Ecuador, Bolivia
+
+    Southern Cone: Argentina, Chile, Paraguay, Uruguay, Falkland Islands
+
+3.  Western Europe: Isle of Man, Austria, Belgium, France, Germany, 
+    Liechtenstein, Luxembourg, Monaco, Netherlands, Switzerland, Jersey, England, Northern Ireland, Ireland, Wales, Scotland, Guernsey
+
+    Central and Eastern Europe: Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Czechia, Hungary, Kosovo, Montenegro, North Macedonia, Poland, Romania, Serbia, Slovakia, Slovenia, Abkhazia, Armenia, Azerbaijan, Belarus, Georgia, Moldova, Russia, South Ossetia, Transnistria, Ukraine
+
+    Southern Europe: Cyprus, Greece, Vatican City, Italy, Malta, Portugal, San Marino, Spain, Northern Cyprus, Andorra, Gibraltar
+    
+    Nothern Europe: Faroe Islands, Estonia, Latvia, Lithuania, Denmark, Finland, Iceland, Norway, Sweden
+
+4.  West Asia: Yemen, United Arab Emirates, Turkey, Syria, Saudi 
+    Arabia, Qatar, Palestine, Oman, Lebanon, Kuwait, Jordan, Israel, Iran, Iraq, Bahrain
+
+    Central Asia: Kyrgyzstan, Kazakhstan, Tajikistan, Uzbekistan, Turkmenistan
+
+    East Asia: China, Hong Kong, Macau, Japan, Mongolia, South Korea, Taiwan 
+
+    Southeast Asia: Brunei, Cambodia, East Timor, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore, Thailand, Vietnam
+
+    South Asia: Afghanistan, Bangladesh, Bhutan, Pakistan, India,Maldives, Nepal, Sri Lanka
+
+5.  Northern Africa: Algeria, Egypt, Libya, Morocco, Sudan, Tunisia
+
+    Eastern Africa: Burundi, Comoros, Djibouti, Eritrea, Ethiopia, Kenya, Madagascar, Malawi, Mauritius, Mozambique, Rwanda, Seychelles, Somalia, South Sudan, Tanzania, Uganda, Zambia, Zimbabwe
+
+    Middle Africa: Angola, Cameroon, Central African Republic, Chad, Congo, DR Congo, Equatorial Guinea, Gabon
+
+    Southern Africa: Botswana, Swaziland, Lesotho, Namibia, South Africa
+
+    Western Africa: Benin, Burkina Faso, Cape Verde, Guinea, Guinea-Bissau, Ivory Coast, Gambia, Ghana, Liberia, Mali, Mauritania, Niger, Nigeria, Saint Helena, Ascension and Tristan da Cunha, Senegal, Sierra Leone, Togo
+
+6.  Australasia: Australia, New Zealand
+
+    Melanesia: Fiji, New Caledonia, Papua New Guinea, Solomon Islands, Vanuatu 
+
+    Micronesia: Micronesia, Guam, Kiribati, Marshall Islands, Nauru, Northern Mariana Islands, Palau
+
+    Polynesia: American Samoa, Cook Islands, French Polynesia, Niue, Norfolk Island, Pitcairn Islands, Samoa, Tonga, Tuvalu, Wallis and Futuna

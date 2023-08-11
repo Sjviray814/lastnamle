@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lastnamle</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"> <script src="jquery.js"></script> 
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+</head>
+<body>
+    
+    <div class="content">
+        
+
+        <div class="title"></div>
+        <div class="name">The name for today is: <span id="todayName"></span></div>
+
+        <div class="guesses">
+            <div class="guess">1. <span id="guess1"></span></div>
+            <div class="guess">2. <span id="guess2"></span></div>
+            <div class="guess">3. <span id="guess3"></span></div>
+            <div class="guess">4. <span id="guess4"></span></div>
+            <div class="guess">5. <span id="guess5"></span></div>
+        </div>
+
+        <input type="text" id="guessBox" class="autocomplete">
+
+        <button type="button" onclick="guessMade()">Guess!</button>
+
+    </div>
+
+
+    
+    <script src="data/data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

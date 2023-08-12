@@ -18,7 +18,7 @@ Continents:
 
 Subregions:
 
-1. Central America, Northern America, Carribean 
+1. Central America, Northern America, Caribbean 
 (based on https://www.teacherspayteachers.com/Product/North-America-A-World-Region-PowerPoint-1530616)
 
 2. Caribbean North, Brazil, Andean West, Southern Cone
@@ -44,7 +44,7 @@ Countries in each subregion:
     
     Northern America: Canada, United States, Greenland, Bermuda, Saint Pierre and Miquelon
     
-    Carribean: Anguilla, Antigua and Barbuda, Aruba, Bahamas, Barbados, British Virgin Islands, Cayman Islands, Cuba, Dominica, Dominican Republic, Grenada, Haiti, Jamaica, Saint Martin, Montserrat, Puerto Rico, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Trinidad and Tobago, United States Virgin Islands, Saint Barthelemy, Turks and Caicos Islands
+    Caribbean: Anguilla, Antigua and Barbuda, Aruba, Bahamas, Barbados, British Virgin Islands, Cayman Islands, Cuba, Dominica, Dominican Republic, Grenada, Haiti, Jamaica, Saint Martin, Montserrat, Puerto Rico, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Trinidad and Tobago, United States Virgin Islands, Saint Barthelemy, Turks and Caicos Islands
 
 2.  Caribbean North: Colombia, Venezuela, Guyana, Suriname
     
@@ -91,3 +91,18 @@ Countries in each subregion:
     Micronesia: Micronesia, Guam, Kiribati, Marshall Islands, Nauru, Northern Mariana Islands, Palau
 
     Polynesia: American Samoa, Cook Islands, French Polynesia, Niue, Norfolk Island, Pitcairn Islands, Samoa, Tonga, Tuvalu, Wallis and Futuna
+
+In the pruned country list, the possibleDailyCountries.txt, there are: 
+Subregion name (number of countries)
+
+North America: Central America (7), Northern America (2), Caribbean (4) 
+
+South America: Caribbean North (2), Brazil (1), Andean West (3), Southern Cone (3)
+
+Europe: Western Europe (6), Central and Eastern Europe (11), Southern Europe (4), Nothern Europe (3)
+
+Asia: West Asia (12), Central Asia (4), East Asia (4), Southeast Asia (10), South Asia (7)
+
+Africa: Northern Africa (4), Eastern Africa (15), Middle Africa (7), Southern Africa (1), Western Africa (15)
+
+Oceania: Australasia (0), Melanesia (1), Micronesia (0), Polynesia (0) 

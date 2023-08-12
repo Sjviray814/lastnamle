@@ -1,4 +1,5 @@
 let guesses = [];
+let answer;
 
 // for(let i = 0; i < 10; i ++){
 //     let rand = Math.floor(Math.random()*10000)
@@ -20,6 +21,8 @@ $(".autocomplete").autocomplete({source: function(request, response) {
 }});
 
 
+
+let finished = document.getElementById('finished')
 // This function runs whenever a guess is made:
 function guessMade(){
     let guess = document.getElementById('guessBox').value;
@@ -27,6 +30,22 @@ function guessMade(){
     
     guesses.push(guess);
     updateGuesses();
+
+    if(guess == answer){
+        finished.innerHTML = "You have successfully guessed the answer!"
+        document.querySelector('input').setAttribute('readonly', '')
+    }
+    else{ // USE THIS SPACE FOR HINTS AS WELL
+
+
+        if(guesses.length == 5){
+            finished.innerHTML  = `Unfortunately, you did not guess the country right in 5 guesses.  The answer was ${answer}`;
+            document.querySelector('input').setAttribute('readonly', '')
+        }
+        else{
+            finished.innerHTML  = 'Nope, that\'s not it';
+        }
+    }
 }
 
 function updateGuesses(){
@@ -59,9 +78,37 @@ function newGame(){
     random = Math.floor((Math.random() * data.country.length))
 
     let country = getCountry(random);
+    answer = country.country;
 
     document.getElementById('todayName').innerHTML = country.name;
-
 }
 
-newGame()
+function newGame(day){
+    resetGuesses();
+    guesses = [];
+
+    let country = getCountry(order[day]);
+    answer = country.country;
+
+    document.getElementById('todayName').innerHTML = country.name;
+}
+
+
+const beginningDay = new Date('August 11, 2023');
+function dailyGame(){
+    let daysElapsed = msToDays(new Date() - beginningDay)-1;
+    newGame(daysElapsed)
+}
+
+function msToDays(ms){
+	let secs = ms/1000;
+	let mins = secs/60;
+	let hrs = mins/60;
+	let days = Math.round(hrs/24)
+	return days;
+}
+
+
+window.addEventListener('load', () => {
+    dailyGame();
+})

@@ -43,6 +43,7 @@ function guessMade(){
             document.querySelector('input').setAttribute('readonly', '')
         }
         else{
+            fillHint(guess, answer, guesses.length)
             finished.innerHTML  = 'Nope, that\'s not it';
         }
     }
@@ -112,3 +113,29 @@ function msToDays(ms){
 window.addEventListener('load', () => {
     dailyGame();
 })
+
+function fillHint(guess, answer, attempt){
+    let guessHints = possibleDailyCountries[guess];
+    let answerHints = possibleDailyCountries[answer];
+    // [Africa, North Africa]
+
+    let guessedCountry = guessHints[0]
+    let guessedRegion = guessHints[1]
+    let guessedLetters = guess.length
+    let guessedFirstLetter = guess.substring(0, 1)
+
+    let answerCountry = answerHints[0]
+    let answerRegion = answerHints[1]
+    let answerLetters = answer.length
+    let answerFirstLetter = answer.substring(0, 1)
+
+    document.getElementById(`hintCountry${attempt}`).innerHTML = guessedCountry
+    document.getElementById(`hintRegion${attempt}`).innerHTML = guessedRegion
+    document.getElementById(`hintLetters${attempt}`).innerHTML = guessedLetters
+    document.getElementById(`hintFirstLetter${attempt}`).innerHTML = guessedFirstLetter
+
+    document.getElementById(`hintCountry${attempt}`).style.color = guessedCountry == answerCountry ? 'green' : 'red'
+    document.getElementById(`hintRegion${attempt}`).style.color = guessedRegion == answerRegion ? 'green' : 'red'
+    document.getElementById(`hintLetters${attempt}`).style.color = guessedLetters == answerLetters ? 'green' : 'red'
+    document.getElementById(`hintFirstLetter${attempt}`).style.color = guessedFirstLetter == answerFirstLetter ? 'green' : 'red'
+}

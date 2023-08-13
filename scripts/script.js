@@ -35,6 +35,8 @@ function guessMade(){
     if(guess == answer){
         finished.innerHTML = "You have successfully guessed the answer!"
         document.querySelector('input').setAttribute('readonly', '')
+        document.getElementById("giveUp").disabled = true;
+        document.getElementById("guessButton").disabled = true;
     }
     else{ // USE THIS SPACE FOR HINTS AS WELL
 
@@ -42,6 +44,8 @@ function guessMade(){
         if(guesses.length == 5){
             finished.innerHTML  = `Unfortunately, you did not guess the country right in 5 guesses.  The answer was ${answer}`;
             document.querySelector('input').setAttribute('readonly', '')
+            document.getElementById("giveUp").disabled = true;
+            document.getElementById("guessButton").disabled = true;
         }
         else{
             fillHint(guess, answer, guesses.length)

@@ -60,6 +60,12 @@
             </div>
 
             <div class="guess">5. <span id="guess5"></span></div>
+            <div class="hint">
+                <span id="hintCountry5"></span>
+                <span id="hintRegion5"></span>
+                <span id="hintFirstLetter5"></span>
+                <span id="hintLetters5"></span>
+            </div>
         </div>
 
         <input type="text" id="guessBox" class="autocomplete">
@@ -69,7 +75,7 @@
         <div id="finished"></div>
 
         <button type="button" onclick="newGameGlobal()">New Game</button>
-        <button type="button" onclick="giveUp()">Give Up</button>
+        <button type="button" id="giveUp" onclick="giveUp()">Give Up</button>
 
         <div class="difficulty">Select your difficulty:</div>
         <select id="selectDifficulty" onchange="setDifficulty(this.value)">

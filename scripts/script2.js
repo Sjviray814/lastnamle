@@ -38,7 +38,10 @@ function guessMade(){
 
     if(guess == answer){
         finished.innerHTML = "You have successfully guessed the answer!"
+        fillHint(guess, answer, guesses.length)
         document.querySelector('input').setAttribute('readonly', '')
+        document.getElementById("giveUp").disabled = true;
+        document.getElementById("guessButton").disabled = true;
         game++;
     }
     else{ // USE THIS SPACE FOR HINTS AS WELL
@@ -47,6 +50,8 @@ function guessMade(){
         if(guesses.length == 5){
             finished.innerHTML  = `Unfortunately, you did not guess the country right in 5 guesses.  The answer was ${answer}`;
             document.querySelector('input').setAttribute('readonly', '')
+            document.getElementById("giveUp").disabled = true;
+            document.getElementById("guessButton").disabled = true;
             game++;
         }
         else{
@@ -126,6 +131,8 @@ window.addEventListener('load', () => {
 
 function resetText(){
     document.querySelectorAll('span').innerHTML = ""
+    document.getElementById("giveUp").disabled = false;
+    document.getElementById("guessButton").disabled = false;
     for(let attempt = 1; attempt <= 4; attempt++){
         document.getElementById(`hintCountry${attempt}`).innerHTML = ''
         document.getElementById(`hintRegion${attempt}`).innerHTML = ''
@@ -143,6 +150,8 @@ function resetText(){
 function giveUp(){
     finished.innerHTML  = `Unfortunately, you did not guess the country right in 5 guesses.  The answer was ${answer}`;
     document.querySelector('input').setAttribute('readonly', '')
+    document.getElementById("giveUp").disabled = true;
+    document.getElementById("guessButton").disabled = true;
     game++;
 }
 

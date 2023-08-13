@@ -39,7 +39,7 @@ Subregions:
 
 Countries in each subregion:
 
-1.  Central America: Belize, Costa Rica, El Salvador,Guatemala, 
+1.  Central America: Belize, Costa Rica, El Salvador, Guatemala, 
     Honduras, Nicaragua, Panama, Mexico
     
     Northern America: Canada, United States, Greenland, Bermuda, Saint Pierre and Miquelon

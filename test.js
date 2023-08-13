@@ -53,3 +53,10 @@ function shuffle(array) {
 
   return array;
 }
+
+
+let finishedCountries = Object.keys(possibleDailyCountries)
+
+let unfinishedCountries = possibleCountries.filter(f => !finishedCountries.includes(f))
+
+console.log(unfinishedCountries)

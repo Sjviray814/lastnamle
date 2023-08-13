@@ -1,0 +1,322 @@
+0
+: 
+"Abkhazia"
+1
+: 
+"Andorra"
+2
+: 
+"Anguilla"
+3
+: 
+"Australia"
+4
+: 
+"Bahrain"
+5
+: 
+"Barbados"
+6
+: 
+"Bosnia and Herzegovina"
+7
+: 
+"British Virgin Islands"
+8
+: 
+"Cape Verde"
+9
+: 
+"Cyprus"
+10
+: 
+"Dominica"
+11
+: 
+"Estonia"
+12
+: 
+"Falkland Islands"
+13
+: 
+"Fiji"
+14
+: 
+"Gabon"
+15
+: 
+"Georgia"
+16
+: 
+"Grenada"
+17
+: 
+"Guyana"
+18
+: 
+"Kyrgyzstan"
+19
+: 
+"Latvia"
+20
+: 
+"Lesotho"
+21
+: 
+"Lithuania"
+22
+: 
+"Macau"
+23
+: 
+"Maldives"
+24
+: 
+"Malta"
+25
+: 
+"Moldova"
+26
+: 
+"Mongolia"
+27
+: 
+"Montserrat"
+28
+: 
+"Namibia"
+29
+: 
+"New Caledonia"
+30
+: 
+"Norfolk Island"
+31
+: 
+"North Macedonia"
+32
+: 
+"Northern Ireland"
+33
+: 
+"Palestine"
+34
+: 
+"Pitcairn Islands"
+35
+: 
+"Qatar"
+36
+: 
+"Saint Helena, Ascension and Tristan da Cunha"
+37
+: 
+"Saint Lucia"
+38
+: 
+"Saint Pierre and Miquelon"
+39
+: 
+"Samoa"
+40
+: 
+"Scotland"
+41
+: 
+"Slovenia"
+42
+: 
+"Suriname"
+43
+: 
+"Tonga"
+44
+: 
+"Trinidad and Tobago"
+45
+: 
+"Turks and Caicos Islands"
+46
+: 
+"United States Virgin Islands"
+47
+: 
+"Vatican City"
+48
+: 
+"Wallis and Futuna"
+49
+: 
+"American Samoa"
+50
+: 
+"Antigua and Barbuda"
+51
+: 
+"Aruba"
+52
+: 
+"Austria"
+53
+: 
+"Bahamas"
+54
+: 
+"Belarus"
+55
+: 
+"Belize"
+56
+: 
+"Bermuda"
+57
+: 
+"Botswana"
+58
+: 
+"Brunei"
+59
+: 
+"Cayman Islands"
+60
+: 
+"Cook Islands"
+61
+: 
+"Croatia"
+62
+: 
+"Czechia"
+63
+: 
+"Djibouti"
+64
+: 
+"Faroe Islands"
+65
+: 
+"Finland"
+66
+: 
+"French Polynesia"
+67
+: 
+"Gibraltar"
+68
+: 
+"Greenland"
+69
+: 
+"Guam"
+70
+: 
+"Guernsey"
+71
+: 
+"Iceland"
+72
+: 
+"Isle of Man"
+73
+: 
+"Jamaica"
+74
+: 
+"Jersey"
+75
+: 
+"Kiribati"
+76
+: 
+"Liechtenstein"
+77
+: 
+"Luxembourg"
+78
+: 
+"Marshall Islands"
+79
+: 
+"Mauritius"
+80
+: 
+"Micronesia"
+81
+: 
+"Monaco"
+82
+: 
+"Montenegro"
+83
+: 
+"Nauru"
+84
+: 
+"New Zealand"
+85
+: 
+"Niue"
+86
+: 
+"Northern Cyprus"
+87
+: 
+"Northern Mariana Islands"
+88
+: 
+"Palau"
+89
+: 
+"Saint Barthelemy"
+90
+: 
+"Saint Kitts and Nevis"
+91
+: 
+"Saint Martin"
+92
+: 
+"Saint Vincent and the Grenadines"
+93
+: 
+"San Marino"
+94
+: 
+"Seychelles"
+95
+: 
+"Slovakia"
+96
+: 
+"Solomon Islands"
+97
+: 
+"South Ossetia"
+98
+: 
+"Swaziland"
+99
+: 
+"Switzerland"
+[100 … 106]
+100
+: 
+"Taiwan"
+101
+: 
+"Transnistria"
+102
+: 
+"Tunisia"
+103
+: 
+"Tuvalu"
+104
+: 
+"Uruguay"
+105
+: 
+"Vanuatu"
+106
+: 
+"Wales"

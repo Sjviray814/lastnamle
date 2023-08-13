@@ -1,5 +1,6 @@
 let guesses = [];
 let answer;
+const swup = new Swup()
 
 // for(let i = 0; i < 10; i ++){
 //     let rand = Math.floor(Math.random()*10000)

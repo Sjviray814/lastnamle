@@ -1,0 +1,9 @@
+/* https://www.youtube.com/watch?v=eVwH3VL1EsA */
+
+html.is-changing .transition-home {
+    transition: opacity 0.25s;
+    opacity: 1;
+  }
+  html.is-animating .transition-home {
+    opacity: 0;
+  }

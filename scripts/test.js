@@ -1,5 +1,5 @@
 let desired = [];
-let testIncidence = 40000;
+let testIncidence = 1000000;
 let possibleIndices = []
 
 for(let i = 0; i < data.country.length; i++){
@@ -55,8 +55,8 @@ function shuffle(array) {
 }
 
 
-let finishedCountries = Object.keys(possibleDailyCountries)
+// let finishedCountries = Object.keys(possibleDailyCountries)
 
-let unfinishedCountries = possibleCountries.filter(f => !finishedCountries.includes(f))
+// let unfinishedCountries = possibleCountries.filter(f => !finishedCountries.includes(f))
 
-console.log(unfinishedCountries)
+// console.log(unfinishedCountries)

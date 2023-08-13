@@ -17,7 +17,7 @@
         
 
         <div class="title"></div>
-        <div class="name">The name for today is: <span id="todayName"></span></div>
+        <span id="todayName"></span>
 
         <div class="guesses">
             <div class="hint" id="hintLabels">
@@ -68,15 +68,16 @@
 
         <div id="finished"></div>
 
+        <button type="button" onclick="newGame(1)">New Game</button>
+        <button type="button" onclick="giveUp()">Give Up</button>
 
-        <a href="/training.html"><button type="button">Go to Training</button></a>
+
+        <a href="/index.html"><button type="button">Go Home</button></a>
+
     </div>
-
-
     <script src="data/possibleDailyCountries.js"></script>
     <script src="data/data.js"></script>
-    <script src="scripts/dailyOrder.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/script2.js"></script>
     <script src="scripts/test.js"></script>
 </body>
 </html>

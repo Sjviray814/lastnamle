@@ -64,18 +64,30 @@
 
         <input type="text" id="guessBox" class="autocomplete">
 
-        <button type="button" onclick="guessMade()">Guess!</button>
+        <button type="button" onclick="guessMade()" id="guessButton">Guess!</button>
 
         <div id="finished"></div>
 
-        <button type="button" onclick="newGame(1)">New Game</button>
+        <button type="button" onclick="newGameGlobal()">New Game</button>
         <button type="button" onclick="giveUp()">Give Up</button>
+
+        <div class="difficulty">Select your difficulty:</div>
+        <select id="selectDifficulty" onchange="setDifficulty(this.value)">
+            <option value="0">Beginner</option>
+            <option value="1">Easy</option>
+            <option value="2" selected>Normal</option>
+            <option value="3">Hard</option>
+            <option value="4">Expert</option>
+            <option value="5">Impossible</option>
+
+        </select>
 
 
         <a href="/index.html"><button type="button">Go Home</button></a>
 
     </div>
     <script src="data/possibleDailyCountries.js"></script>
+    <script src="scripts/commonFunctions.js"></script>
     <script src="data/data.js"></script>
     <script src="scripts/script2.js"></script>
     <script src="scripts/test.js"></script>

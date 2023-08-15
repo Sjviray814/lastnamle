@@ -52,6 +52,7 @@ function guessMade(){
             document.querySelector('input').setAttribute('readonly', '')
             document.getElementById("giveUp").disabled = true;
             document.getElementById("guessButton").disabled = true;
+            fillHint(guess, answer, guesses.length)
             game++;
         }
         else{
@@ -133,7 +134,7 @@ function resetText(){
     document.querySelectorAll('span').innerHTML = ""
     document.getElementById("giveUp").disabled = false;
     document.getElementById("guessButton").disabled = false;
-    for(let attempt = 1; attempt <= 4; attempt++){
+    for(let attempt = 1; attempt <= 5; attempt++){
         document.getElementById(`hintCountry${attempt}`).innerHTML = ''
         document.getElementById(`hintRegion${attempt}`).innerHTML = ''
         document.getElementById(`hintLetters${attempt}`).innerHTML = ''

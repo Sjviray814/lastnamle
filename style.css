@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+
 /* https://www.youtube.com/watch?v=eVwH3VL1EsA */
 
 html.is-changing .transition-home {
@@ -7,3 +11,82 @@ html.is-changing .transition-home {
   html.is-animating .transition-home {
     opacity: 0;
   }
+
+
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+}
+
+.title{
+  font-family: 'Tilt Warp', cursive;
+  font-size: 4rem;
+}
+
+.name{
+  text-align: center;
+  font-family: 'Tilt Warp', cursive;
+  font-size: 2rem;
+}
+#todayName{
+  font-size: 3rem;
+}
+
+.guesses{
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.hint{
+  display: grid;
+  grid-auto-flow: column;
+}
+
+#hintLabels{
+  font-family: 'Quicksand', sans-serif;
+}
+.hintLabel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+  margin-left: 8px;
+}
+
+.guessGroup{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+}
+
+.guess span{
+  font-family: 'Tilt Warp', cursive;
+  font-size: 2rem;
+}
+
+.hint span{
+  width: 110px;
+  overflow-wrap: normal;
+  text-align: center;
+}
+
+/* Adds circle around the hint */
+.hint span:not(.hintLabel){  
+  padding: 5px;
+  display: flex;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  background: white;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3vw;
+}
+
+.guess{
+  margin-bottom: 10px;
+}

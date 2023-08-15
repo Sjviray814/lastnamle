@@ -44,8 +44,20 @@ function fillHint(guess, answer, attempt){
     document.getElementById(`hintLetters${attempt}`).innerHTML = guessedLetters
     document.getElementById(`hintFirstLetter${attempt}`).innerHTML = guessedFirstLetter
 
-    document.getElementById(`hintCountry${attempt}`).style.color = guessedCountry == answerCountry ? 'green' : 'red'
-    document.getElementById(`hintRegion${attempt}`).style.color = guessedRegion == answerRegion ? 'green' : 'red'
-    document.getElementById(`hintLetters${attempt}`).style.color = guessedLetters == answerLetters ? 'green' : 'red'
-    document.getElementById(`hintFirstLetter${attempt}`).style.color = guessedFirstLetter == answerFirstLetter ? 'green' : 'red'
+    document.getElementById(`hintCountry${attempt}`).style.background = guessedCountry == answerCountry ? 'green' : 'red'
+    document.getElementById(`hintCountry${attempt}`).style.width = '120px'
+    document.getElementById(`hintCountry${attempt}`).style.height = '120px'
+
+
+    document.getElementById(`hintRegion${attempt}`).style.background = guessedRegion == answerRegion ? 'green' : 'red'
+    document.getElementById(`hintRegion${attempt}`).style.width = '120px'
+    document.getElementById(`hintRegion${attempt}`).style.height = '120px'
+
+    document.getElementById(`hintLetters${attempt}`).style.background = guessedLetters == answerLetters ? 'green' : 'red'
+    document.getElementById(`hintLetters${attempt}`).style.width = '120px'
+    document.getElementById(`hintLetters${attempt}`).style.height = '120px'
+
+    document.getElementById(`hintFirstLetter${attempt}`).style.background = guessedFirstLetter == answerFirstLetter ? 'green' : 'red'
+    document.getElementById(`hintFirstLetter${attempt}`).style.width = '120px'
+    document.getElementById(`hintFirstLetter${attempt}`).style.height = '120px'
 }

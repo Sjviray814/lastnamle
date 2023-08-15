@@ -60,3 +60,17 @@ function shuffle(array) {
 // let unfinishedCountries = possibleCountries.filter(f => !finishedCountries.includes(f))
 
 // console.log(unfinishedCountries)
+
+let ctrys = Object.keys(possibleDailyCountries)
+
+let regions = {}
+for(let country of ctrys){
+  if(regions[possibleDailyCountries[country][1]] > 0){
+    regions[possibleDailyCountries[country][1]]++;
+  }
+  else{
+    regions[possibleDailyCountries[country][1]] = 1
+  }
+}
+
+console.log(regions)

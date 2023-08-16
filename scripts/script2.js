@@ -8,6 +8,9 @@ let difficulties = [1000000, 200000, 50000, 10000, 2000, 0]
 
 let countryOrder = [];
 
+const confetti = document.getElementById('confetti');
+const jsConfetti = new JSConfetti();
+
 // for(let i = 0; i < 10; i ++){
 //     let rand = Math.floor(Math.random()*10000)
 
@@ -43,6 +46,7 @@ function guessMade(){
         document.getElementById("giveUp").disabled = true;
         document.getElementById("guessButton").disabled = true;
         game++;
+        jsConfetti.addConfetti();
     }
     else{ // USE THIS SPACE FOR HINTS AS WELL
 

@@ -2,6 +2,9 @@ let guesses = [];
 let answer;
 const swup = new Swup()
 
+const confetti = document.getElementById('confetti');
+const jsConfetti = new JSConfetti();
+
 // for(let i = 0; i < 10; i ++){
 //     let rand = Math.floor(Math.random()*10000)
 
@@ -37,6 +40,7 @@ function guessMade(){
         document.querySelector('input').setAttribute('readonly', '')
         document.getElementById("guessButton").disabled = true;
         fillHint(guess, answer, guesses.length)
+        jsConfetti.addConfetti();
     }
     else{ // USE THIS SPACE FOR HINTS AS WELL
 

@@ -130,24 +130,6 @@ window.addEventListener('load', () => {
     game = 0;
 })
 
-function resetText(){
-    document.querySelectorAll('span').innerHTML = ""
-    document.getElementById("giveUp").disabled = false;
-    document.getElementById("guessButton").disabled = false;
-    for(let attempt = 1; attempt <= 5; attempt++){
-        document.getElementById(`hintCountry${attempt}`).innerHTML = ''
-        document.getElementById(`hintRegion${attempt}`).innerHTML = ''
-        document.getElementById(`hintLetters${attempt}`).innerHTML = ''
-        document.getElementById(`hintFirstLetter${attempt}`).innerHTML = ''
-
-        document.getElementById(`hintCountry${attempt}`).style.color = ''
-        document.getElementById(`hintRegion${attempt}`).style.color = ''
-        document.getElementById(`hintLetters${attempt}`).style.color =''
-        document.getElementById(`hintFirstLetter${attempt}`).style.color = ''
-        document.getElementById('finished').innerHTML=''
-    }
-}
-
 function giveUp(){
     finished.innerHTML  = `Unfortunately, you did not guess the country right in 5 guesses.  The answer was ${answer}`;
     document.querySelector('input').setAttribute('readonly', '')

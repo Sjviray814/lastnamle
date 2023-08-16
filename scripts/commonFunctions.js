@@ -61,3 +61,39 @@ function fillHint(guess, answer, attempt){
     document.getElementById(`hintFirstLetter${attempt}`).style.width = '120px'
     document.getElementById(`hintFirstLetter${attempt}`).style.height = '120px'
 }
+
+function resetText(){
+  document.querySelectorAll('span').innerHTML = ""
+  document.getElementById("giveUp").disabled = false;
+  document.getElementById("guessButton").disabled = false;
+  for(let attempt = 1; attempt <= 5; attempt++){
+      document.getElementById(`hintCountry${attempt}`).innerHTML = ''
+      document.getElementById(`hintRegion${attempt}`).innerHTML = ''
+      document.getElementById(`hintLetters${attempt}`).innerHTML = ''
+      document.getElementById(`hintFirstLetter${attempt}`).innerHTML = ''
+
+      document.getElementById(`hintCountry${attempt}`).style.color = ''
+      document.getElementById(`hintRegion${attempt}`).style.color = ''
+      document.getElementById(`hintLetters${attempt}`).style.color =''
+      document.getElementById(`hintFirstLetter${attempt}`).style.color = ''
+      document.getElementById('finished').innerHTML=''
+
+
+    document.getElementById(`hintCountry${attempt}`).style.background = 'white'
+    document.getElementById(`hintCountry${attempt}`).style.width = '0px'
+    document.getElementById(`hintCountry${attempt}`).style.height = '0px'
+
+
+    document.getElementById(`hintRegion${attempt}`).style.background = 'white'
+    document.getElementById(`hintRegion${attempt}`).style.width = '0px'
+    document.getElementById(`hintRegion${attempt}`).style.height = '0px'
+
+    document.getElementById(`hintLetters${attempt}`).style.background = 'white'
+    document.getElementById(`hintLetters${attempt}`).style.width = '0px'
+    document.getElementById(`hintLetters${attempt}`).style.height = '0px'
+
+    document.getElementById(`hintFirstLetter${attempt}`).style.background = 'white'
+    document.getElementById(`hintFirstLetter${attempt}`).style.width = '0px'
+    document.getElementById(`hintFirstLetter${attempt}`).style.height = '0px'
+  }
+}

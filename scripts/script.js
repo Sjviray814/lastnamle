@@ -45,6 +45,7 @@ function guessMade(){
             finished.innerHTML  = `Unfortunately, you did not guess the country right in 5 guesses.  The answer was ${answer}`;
             document.querySelector('input').setAttribute('readonly', '')
             document.getElementById("guessButton").disabled = true;
+            fillHint(guess, answer, guesses.length)
         }
         else{
             fillHint(guess, answer, guesses.length)
@@ -76,7 +77,7 @@ function newGame(day){
 }
 
 
-const beginningDay = new Date('August 11, 2023');
+const beginningDay = new Date('2023-08-11T00:00:00-04:00'); // August 11th at 12 am
 function dailyGame(){
     let daysElapsed = msToDays(new Date() - beginningDay)-1;
     newGame(daysElapsed)
@@ -97,4 +98,9 @@ window.addEventListener('load', () => {
 
 
 
-
+function giveUp(){
+    finished.innerHTML  = `Unfortunately, you did not guess the country right in 5 guesses.  The answer was ${answer}`;
+    document.querySelector('input').setAttribute('readonly', '')
+    document.getElementById("giveUp").disabled = true;
+    document.getElementById("guessButton").disabled = true;
+}

@@ -45,6 +45,8 @@
                 </div>
             </div>
 
+            <div class="scrollGuesses">
+
             <div class="guessGroup">
                 <div class="guess">1. <span id="guess1"></span></div>
                 <div class="hint">
@@ -94,16 +96,23 @@
                     <span id="hintLetters5"></span>
                 </div>
             </div>
+            </div>
         </div>
 
-        <input type="text" id="guessBox" class="autocomplete">
+        <div class="inputAnswer">
+            <input type="text" id="guessBox" class="autocomplete">
 
-        <button type="button" onclick="guessMade()" id="guessButton">Guess!</button>
+            <button type="button" onclick="guessMade()" id="guessButton">Guess!</button>
+
+            <a href="/training.html"><button type="button">Go to Training</button></a>
+        </div>
+
+        
 
         <div id="finished"></div>
 
 
-        <a href="/training.html"><button type="button">Go to Training</button></a>
+        
     </div>
 
 

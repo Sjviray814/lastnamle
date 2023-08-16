@@ -3,7 +3,7 @@ let answer;
 const swup = new Swup()
 
 const confetti = document.getElementById('confetti');
-const jsConfetti = new JSConfetti();
+const jsConfetti = new JSConfetti({ confetti })
 
 // for(let i = 0; i < 10; i ++){
 //     let rand = Math.floor(Math.random()*10000)

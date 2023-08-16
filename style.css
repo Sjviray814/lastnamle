@@ -5,45 +5,48 @@
 /* https://www.youtube.com/watch?v=eVwH3VL1EsA */
 
 html.is-changing .transition-home {
-    transition: opacity 0.25s;
-    opacity: 1;
-  }
-  html.is-animating .transition-home {
-    opacity: 0;
-  }
+  transition: opacity 0.25s;
+  opacity: 1;
+}
+
+html.is-animating .transition-home {
+  opacity: 0;
+}
 
 
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.3vh;
 }
 
-.title{
+.title {
   font-family: 'Tilt Warp', cursive;
   font-size: 4rem;
 }
 
-.name{
+.name {
   text-align: center;
   font-family: 'Tilt Warp', cursive;
   font-size: 2rem;
 }
-#todayName{
+
+#todayName {
   font-size: 3rem;
 }
 
-.guesses{
+.guesses {
   display: flex;
   flex-direction: column;
 }
 
-.scrollGuesses{
-  overflow-y:scroll;
+.scrollGuesses {
+  overflow-y: scroll;
   height: 35vh;
 }
+
 .scrollGuesses::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 10px;
@@ -51,24 +54,25 @@ html.is-changing .transition-home {
 
 .scrollGuesses::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: rgba(0,0,0,.5);
-  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 
 
-.hint{
+.hint {
   display: grid;
   grid-auto-flow: column;
   gap: 3vw;
   align-items: center;
 }
 
-#hintLabels{
+#hintLabels {
   font-family: 'Quicksand', sans-serif;
   gap: 3vw;
   transform: translateX(-10px)
 }
-.hintLabel{
+
+.hintLabel {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,7 +80,7 @@ html.is-changing .transition-home {
   width: 110px;
 }
 
-.guessGroup{
+.guessGroup {
   font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
   margin-bottom: 5vh;
@@ -84,19 +88,19 @@ html.is-changing .transition-home {
 }
 
 
-.guess span{
+.guess span {
   font-family: 'Tilt Warp', cursive;
   font-size: 2rem;
 }
 
-.hint span{
+.hint span {
   width: 140px;
   overflow-wrap: normal;
   text-align: center;
 }
 
 /* Adds circle around the hint */
-.hint span:not(.hintLabel){  
+.hint span:not(.hintLabel) {
   display: flex;
   border-radius: 50%;
   width: 0;
@@ -105,15 +109,15 @@ html.is-changing .transition-home {
   color: white;
   align-items: center;
   justify-content: center;
-  padding:5px;
+  padding: 5px;
 }
 
 
-.guess{
+.guess {
   margin-bottom: 10px;
 }
 
-input{
+input {
   font-family: 'Quicksand', sans-serif;
   width: min(500px, 80vw);
   height: 35px;
@@ -128,13 +132,13 @@ button {
   background-color: #fff;
   border-radius: 24px;
   border-style: none;
-  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
   box-sizing: border-box;
   color: #3c4043;
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
-  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 48px;
@@ -147,12 +151,12 @@ button {
   position: relative;
   text-align: center;
   text-transform: none;
-  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   width: auto;
-  will-change: transform,opacity;
+  will-change: transform, opacity;
   z-index: 0;
 }
 
@@ -191,28 +195,28 @@ button:disabled {
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
 
-#finished{
+#finished {
   font-family: 'Quicksand', sans-serif;
   font-size: 2rem;
 }
 
-.inputAnswer{
+.inputAnswer {
   display: flex;
   flex-direction: row;
-  gap:15px;
+  gap: 15px;
   align-items: center;
   overflow-x: wrap;
   max-width: inherit;
 }
 
-.inputAnswer2{
+.inputAnswer2 {
   display: flex;
   flex-direction: row;
   gap: 25px;
 }
 
-.difficultySelector{
-  display:flex;
+.difficultySelector {
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
@@ -221,16 +225,14 @@ button:disabled {
   border-radius: 4px;
 }
 
-select{
+select {
   font-family: 'Quicksand', sans-serif;
   width: min(200px, 20vw);
   height: 35px;
   font-size: 1.2rem;
 }
 
-#confetti{
+#confetti {
   position: absolute;
-  top: 50vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
+  top: 0;
 }

@@ -1,129 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lastnamle</title>
-    <script src="https://unpkg.com/swup@4"></script>
-    <link rel="stylesheet" href="style.css">
-    <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"> <script src="scripts/jquery.js"></script> 
-    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
-    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
-    <link rel="shortcut icon" href="assets/continent.svg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lastnamle</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.8.10/themes/smoothness/jquery-ui.css" type="text/css">
+  <script src="scripts/jquery-3.7.0.min.js"></script>
+  <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>
+
+
+
+  <link rel="shortcut icon" href="assets/continent.svg" type="image/x-icon">
+  <script src="https://unpkg.com/swup@4"></script>
 </head>
+
 <body>
-    
-    <div class="content transition-home">
-        
 
-        <div class="title">LASTNAMLE</div>
-        <div class="name">The name for today is: <br><span id="todayName"></span></div>
+  <div class="content transition-home">
 
-        <div class="guesses">
-            <div class="guessGroup">
-                <div class="hint" id="hintLabels">
-                    
-                    <span id="hintLabel1" class="hintLabel">
-                        <img src="assets/continent.svg">
-                        Continent
-                    </span>
 
-                    <span id="hintLabel2" class="hintLabel">
-                        <img src="assets/region.svg">
-                        Region
-                    </span>
+    <div class="title">LASTNAMLE</div>
+    <div class="name">The name for today is: <br><span id="todayName"></span></div>
 
-                    <span id="hintLabel3" class="hintLabel">
-                        <img src="assets/firstLetter.svg">
-                        First Letter
-                    </span>
+    <div class="guesses">
+      <div class="guessGroup">
+        <div class="hint" id="hintLabels">
 
-                    <span id="hintLabel4" class="hintLabel">
-                        <img src="assets/letterCount.svg">
-                        # of Letters
-                    </span>
-                </div>
-            </div>
+          <span id="hintLabel1" class="hintLabel">
+            <img src="assets/continent.svg">
+            Continent
+          </span>
 
-            <div class="scrollGuesses">
+          <span id="hintLabel2" class="hintLabel">
+            <img src="assets/region.svg">
+            Region
+          </span>
 
-            <div class="guessGroup">
-                <div class="guess">1. <span id="guess1"></span></div>
-                <div class="hint">
-                    <span id="hintCountry1"></span>
-                    <span id="hintRegion1"></span>
-                    <span id="hintFirstLetter1"></span>
-                    <span id="hintLetters1"></span>
-                </div>
-            </div>
+          <span id="hintLabel3" class="hintLabel">
+            <img src="assets/firstLetter.svg">
+            First Letter
+          </span>
 
-            <div class="guessGroup">
-                <div class="guess">2. <span id="guess2"></span></div>
-                <div class="hint">
-                    <span id="hintCountry2"></span>
-                    <span id="hintRegion2"></span>
-                    <span id="hintFirstLetter2"></span>
-                    <span id="hintLetters2"></span>
-                </div>
-            </div>
+          <span id="hintLabel4" class="hintLabel">
+            <img src="assets/letterCount.svg">
+            # of Letters
+          </span>
+        </div>
+      </div>
 
-            <div class="guessGroup">
-                <div class="guess">3. <span id="guess3"></span></div>
-                <div class="hint">
-                    <span id="hintCountry3"></span>
-                    <span id="hintRegion3"></span>
-                    <span id="hintFirstLetter3"></span>
-                    <span id="hintLetters3"></span>
-                </div>
-            </div>
+      <div class="scrollGuesses">
 
-            <div class="guessGroup">
-                <div class="guess">4. <span id="guess4"></span></div>
-                <div class="hint">
-                    <span id="hintCountry4"></span>
-                    <span id="hintRegion4"></span>
-                    <span id="hintFirstLetter4"></span>
-                    <span id="hintLetters4"></span>
-                </div>
-            </div>
-
-            <div class="guessGroup">
-                <div class="guess">5. <span id="guess5"></span></div>
-                <div class="hint">
-                    <span id="hintCountry5"></span>
-                    <span id="hintRegion5"></span>
-                    <span id="hintFirstLetter5"></span>
-                    <span id="hintLetters5"></span>
-                </div>
-            </div>
-            </div>
+        <div class="guessGroup">
+          <div class="guess">1. <span id="guess1"></span></div>
+          <div class="hint">
+            <span id="hintCountry1"></span>
+            <span id="hintRegion1"></span>
+            <span id="hintFirstLetter1"></span>
+            <span id="hintLetters1"></span>
+          </div>
         </div>
 
-        <div class="inputAnswer">
-            <input type="text" id="guessBox" class="autocomplete" placeholder="Enter a Valid Country">
-
-            <button type="button" onclick="guessMade()" id="guessButton">Guess!</button>
-            <button type="button" id="giveUp" onclick="giveUp()">Give Up :(</button>
-
-            <a href="/training.html"><button type="button">Unlimited Version</button></a>
+        <div class="guessGroup">
+          <div class="guess">2. <span id="guess2"></span></div>
+          <div class="hint">
+            <span id="hintCountry2"></span>
+            <span id="hintRegion2"></span>
+            <span id="hintFirstLetter2"></span>
+            <span id="hintLetters2"></span>
+          </div>
         </div>
 
-        
+        <div class="guessGroup">
+          <div class="guess">3. <span id="guess3"></span></div>
+          <div class="hint">
+            <span id="hintCountry3"></span>
+            <span id="hintRegion3"></span>
+            <span id="hintFirstLetter3"></span>
+            <span id="hintLetters3"></span>
+          </div>
+        </div>
 
-        <div id="finished"></div>
+        <div class="guessGroup">
+          <div class="guess">4. <span id="guess4"></span></div>
+          <div class="hint">
+            <span id="hintCountry4"></span>
+            <span id="hintRegion4"></span>
+            <span id="hintFirstLetter4"></span>
+            <span id="hintLetters4"></span>
+          </div>
+        </div>
 
+        <div class="guessGroup">
+          <div class="guess">5. <span id="guess5"></span></div>
+          <div class="hint">
+            <span id="hintCountry5"></span>
+            <span id="hintRegion5"></span>
+            <span id="hintFirstLetter5"></span>
+            <span id="hintLetters5"></span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        
+    <div class="inputAnswer">
+      <input type="text" id="guessBox" class="autocomplete" placeholder="Enter a Valid Country">
+
+      <button type="button" onclick="guessMade()" id="guessButton">Guess!</button>
+      <button type="button" id="giveUp" onclick="giveUp()">Give Up :(</button>
+
+      <a href="/training.html"><button type="button">Unlimited Version</button></a>
     </div>
 
 
-    <script src="data/possibleDailyCountries.js"></script>
-    <script src="data/data.js"></script>
-    <script src="scripts/commonFunctions.js"></script>
-    <script src="scripts/dailyOrder.js"></script>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/test.js"></script>
+
+    <div id="finished"></div>
+
+
+
+  </div>
+
+
+  <script src="data/possibleDailyCountries.js"></script>
+  <script src="data/data.js"></script>
+  <script src="scripts/commonFunctions.js"></script>
+  <script src="scripts/dailyOrder.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/test.js"></script>
 
 </body>
+
 </html>

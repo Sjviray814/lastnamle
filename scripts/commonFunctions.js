@@ -31,12 +31,12 @@ function fillHint(guess, answer, attempt) {
 
   let guessedCountry = guessHints[0]
   let guessedRegion = guessHints[1]
-  let guessedLetters = guess.trim().length
+  let guessedLetters = guess.replace(/\s/g, '').length
   let guessedFirstLetter = guess.substring(0, 1)
 
   let answerCountry = answerHints[0]
   let answerRegion = answerHints[1]
-  let answerLetters = answer.trim().length
+  let answerLetters = answer.replace(/\s/g, '').length
   let answerFirstLetter = answer.substring(0, 1)
 
   document.getElementById(`hintCountry${attempt}`).innerHTML = guessedCountry

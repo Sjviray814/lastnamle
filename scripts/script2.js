@@ -41,6 +41,10 @@ function guessMade() {
   guesses.push(guess);
   updateGuesses();
 
+  document.getElementById(`guess${guesses.length}`).scrollIntoView({
+    behavior: 'smooth'
+  });
+
   if (guess == answer) {
     finished.innerHTML = "You have successfully guessed the answer!"
     fillHint(guess, answer, guesses.length)

@@ -93,11 +93,22 @@ function newGameGlobal() {
   let minIncidence = difficulties[gameDifficulty];
   countryOrder = [];
 
-  for (let i = 0; i < data.country.length; i++) {
-    if (data.incidence[i] >= minIncidence) {
-      countryOrder.push(i);
+  if (gameDifficulty < 3) {
+    for (let i = 0; i < data.country.length; i++) {
+      if (data.incidence[i] >= minIncidence) {
+        countryOrder.push(i);
+      }
     }
   }
+  else {
+    let maxIncidence = difficulties[gameDifficulty - 2];
+    for (let i = 0; i < data.country.length; i++) {
+      if (data.incidence[i] >= minIncidence && data.incidence[i] <= maxIncidence) {
+        countryOrder.push(i);
+      }
+    }
+  }
+
   shuffle(countryOrder)
 
   let country = getCountry(countryOrder[game % countryOrder.length]);

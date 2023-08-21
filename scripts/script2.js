@@ -70,6 +70,8 @@ function guessMade() {
       finished.innerHTML = 'Nope, that\'s not it';
     }
   }
+
+  document.getElementById('guessBox').value = ''
 }
 
 function updateGuesses() {

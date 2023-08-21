@@ -45,6 +45,7 @@ function guessMade() {
     finished.innerHTML = "You have successfully guessed the answer!"
     document.querySelector('input').setAttribute('readonly', '')
     document.getElementById("guessButton").disabled = true;
+    document.getElementById("giveUp").disabled = true;
     fillHint(guess, answer, guesses.length)
     jsConfetti.addConfetti();
   }
@@ -54,6 +55,7 @@ function guessMade() {
     if (guesses.length == 5) {
       finished.innerHTML = `Unfortunately, you did not guess the country right in 5 guesses.  The answer was ${answer}`;
       document.querySelector('input').setAttribute('readonly', '')
+      document.getElementById("giveUp").disabled = true;
       document.getElementById("guessButton").disabled = true;
       fillHint(guess, answer, guesses.length)
     }
@@ -62,6 +64,9 @@ function guessMade() {
       finished.innerHTML = 'Nope, that\'s not it';
     }
   }
+
+  document.getElementById('guessBox').value = ''
+  saveData();
 }
 
 function updateGuesses() {
@@ -87,10 +92,14 @@ function newGame(day) {
 }
 
 
-const beginningDay = new Date('2023-08-11T00:00:00-04:00'); // August 11th at 12 am
+const beginningDay = new Date('2023-08-11T12:00:00-04:00'); // August 11th at 12 am
 function dailyGame() {
   let daysElapsed = msToDays(new Date() - beginningDay) - 1;
   newGame(daysElapsed)
+}
+
+function getDay(){
+  return msToDays(new Date() - beginningDay) - 1;
 }
 
 function msToDays(ms) {
@@ -103,7 +112,37 @@ function msToDays(ms) {
 
 
 window.addEventListener('load', () => {
-  dailyGame();
+  let savedGuesses = localStorage[`${getDay()}`];
+  if(!savedGuesses){
+    dailyGame();
+  }
+  else{
+    let country = getCountry(order[getDay()]);
+    answer = country.country;
+
+    document.getElementById('todayName').innerHTML = country.name;
+    loadData();
+
+    if(localStorage[`giveUp${getDay()}`].length > 0 ){
+      document.querySelector('input').setAttribute('readonly', '');
+      document.getElementById("guessButton").disabled = true;
+      document.getElementById("giveUp").disabled = true;
+      finished.innerHTML = `Unfortunately, you gave up.  The answer was ${answer}`;
+    }
+    else if(guesses.length == 5 && !guesses.includes(answer)){ // Person failed at guessing in 5 tries
+      document.querySelector('input').setAttribute('readonly', '');
+      document.getElementById("guessButton").disabled = true;
+      document.getElementById("giveUp").disabled = true;
+      finished.innerHTML = `Unfortunately, you did not guess the country right in 5 guesses.  The answer was ${answer}`;
+    }
+    else if(guesses.includes(answer)){
+      finished.innerHTML = "You have successfully guessed the answer!"
+      document.querySelector('input').setAttribute('readonly', '');
+      document.getElementById("giveUp").disabled = true;
+      document.getElementById("guessButton").disabled = true;
+      jsConfetti.addConfetti();
+    }
+  }
 })
 
 
@@ -113,4 +152,27 @@ function giveUp() {
   document.querySelector('input').setAttribute('readonly', '')
   document.getElementById("giveUp").disabled = true;
   document.getElementById("guessButton").disabled = true;
+
+  localStorage[`giveUp${getDay()}`] = 'they gave up lmaooooooooo';
 }
+
+// Use the day as the key
+function saveData(){
+  let storeString = guesses.join(' ');
+  localStorage[`${getDay()}`] = storeString;
+}
+
+function loadData(){
+  let savedGuesses = localStorage[`${getDay()}`];
+  if(!savedGuesses) return;
+  guesses = savedGuesses.split(' ');
+  updateGuesses();
+  fillHints();
+}
+
+function fillHints(){
+  for(let i = 0; i < guesses.length; i++){
+    fillHint(guesses[i], answer, i+1);
+  }
+}
+

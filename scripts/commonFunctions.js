@@ -1,5 +1,8 @@
 function capFirst(str) {
-  return (str.slice(0, 1).toUpperCase() + str.slice(1, str.length))
+  return str.toLowerCase()
+    .split(' ')
+    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+    .join(' ');
 }
 
 input = document.getElementById('guessBox')

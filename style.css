@@ -205,8 +205,8 @@ button:disabled {
   flex-direction: row;
   gap: 15px;
   align-items: center;
+  max-width: 90vw;
   overflow-x: wrap;
-  max-width: inherit;
 }
 
 .inputAnswer2 {
@@ -235,4 +235,50 @@ select {
 #confetti {
   position: absolute;
   top: 0;
+}
+
+@media screen and (orientation:portrait) {
+  .content {
+    display: none;
+  }
+
+  .portrait {
+    font-family: 'Tilt Warp', cursive;
+    font-size: 2rem;
+    left: 50vw;
+    top: 50vh;
+    position: absolute;
+    transform: translate(-50%, -100%);
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (orientation:landscape) {
+  .portrait {
+    display: none;
+  }
+}
+
+.question:hover {
+  cursor: pointer;
+}
+
+.modal div {
+  font-family: 'Quicksand', sans-serif;
+  white-space: preserve;
+}
+
+.forebears {
+  color: blue;
+  text-decoration: underline;
+}
+
+.forebears:hover {
+  cursor: pointer;
+}
+
+.modal {
+  height: 70vh;
+  overflow: scroll;
 }
